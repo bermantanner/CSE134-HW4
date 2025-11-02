@@ -6,87 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Professional and technical experience of Tanner Berman.">
     <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="../index.css">
   </head>
 
   <body>
-    <header>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/experience/">Experience</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page">
+      <header>
+        <nav aria-label="Primary">
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/experience/">Experience</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/experiments.html">Experiments</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <h1>Experience</h1>
+      <main>
+        <h1>Experience</h1>
 
-      <!-- 1. SWE for Parsley360 (current, part-time) -->
-      <article class="work-item">
-        <h2>Software Engineer - Parsley360 (Part-Time, Current)</h2>
-        <p><strong>Duration:</strong> 2025 - Present</p>
-        <p><strong>Description:</strong> &lt;TODO&gt;</p>
-      </article>
+        <!-- 1. SWE for Parsley360 (current, part-time) -->
+        <article class="work-item">
+          <h3>Software Engineer - Parsley360 (Part-Time, Current)</h3>
+          <p><strong>Duration:</strong> 2025 - Present</p>
+          <p><strong>Description:</strong> &lt;TODO&gt;</p>
+        </article>
 
-      <!-- 2. SWE Intern (Summer) -->
-      <article class="work-item">
-        <h2>Software Engineering Intern - Parsley360 (Summer 2025)</h2>
-        <p><strong>Duration:</strong> Summer 2025</p>
-        <p>
-          Built a scalable, multimodal data-ingestion pipeline (Python + C++) that
-          scrapes, OCRs, and cleans documents, cutting manual preprocessing time by ~90%.
-          Designed and implemented a DuckDB/MotherDuck (SQL-based) corpus database with
-          URI links to S3 storage and SHA-256 deduplication; delivered clean topics and
-          embeddings for the demo's reasoning engine. Integrated Gensim LDA + BERTopic
-          to generate document-topic vectors and labels powering RAG retrieval and
-          ontology mapping, and wrote a high-performance C++ tokenizer. Contributed to a
-          temporary Flutter (Dart) app for demo, navigating a large existing codebase to implement fixes.
-        </p>
-        <ol>
-          <li>Cut manual preprocessing time by ~90%.</li>
-          <li>Delivered topic labels and embeddings.</li>
-          <li>Stabilized demo features across teams.</li>
-        </ol>
-      </article>
+        <!-- 2. SWE Intern (Summer) -->
+        <article class="work-item">
+          <h3>Software Engineering Intern - Parsley360 (Summer 2025)</h3>
+          <p><strong>Duration:</strong> Summer 2025</p>
+          <p>
+            Built a scalable, multimodal data-ingestion pipeline (Python + C++) that
+            scrapes, OCRs, and cleans documents, cutting manual preprocessing time by ~90%.
+            Designed and implemented a DuckDB/MotherDuck (SQL-based) corpus database with
+            URI links to S3 storage and SHA-256 deduplication; delivered clean topics and
+            embeddings for the demo's reasoning engine. Integrated Gensim LDA + BERTopic
+            to generate document-topic vectors and labels powering RAG retrieval and
+            ontology mapping, and wrote a high-performance C++ tokenizer. Contributed to a
+            temporary Flutter (Dart) app for demo, navigating a large existing codebase to implement fixes.
+          </p>
+          <ol>
+            <li>Cut manual preprocessing time by ~90%.</li>
+            <li>Delivered topic labels and embeddings.</li>
+            <li>Stabilized demo features across teams.</li>
+          </ol>
+        </article>
 
-      <!-- 3. Software Lead - ACM Projects -->
-      <article class="work-item">
-        <h2>Software Lead - ACM Projects</h2>
-        <p>
-          Led a 6-person team to build a MERN-stack web app matching UCSD students for
-          shared rides to and from local airports. Built MongoDB schemas using Mongoose,
-          deployed via Atlas, integrated Firebase authentication, and implemented custom
-          post filtering by airport, date, time, and preferred gender. Facilitated
-          stand-ups, retros, and sprint planning; mentored junior developers, oversaw
-          backend development and PR reviews, and ensured consistent collaboration with Git.
-        </p>
-      </article>
+        <!-- 3. Software Lead - ACM Projects -->
+        <article class="work-item">
+          <h3>Software Lead - ACM Projects</h3>
+          <p>
+            Led a 6-person team to build a MERN-stack web app matching UCSD students for
+            shared rides to and from local airports. Built MongoDB schemas using Mongoose,
+            deployed via Atlas, integrated Firebase authentication, and implemented custom
+            post filtering by airport, date, time, and preferred gender. Facilitated
+            stand-ups, retros, and sprint planning; mentored junior developers, oversaw
+            backend development and PR reviews, and ensured consistent collaboration with Git.
+          </p>
+        </article>
 
-      <!-- 4. Event Host - ACM Events Team -->
-      <article class="work-item">
-        <h2>Event Host - ACM Events Team</h2>
-        <p>
-          Led and organized campus-wide computing events, including a 50+ attendee
-          intern panel and a custom Discord Bot workshop; also hosted weekly LeetCode
-          sessions. Collaborated in weekly team meetings to plan and promote ACM events.
-        </p>
-      </article>
+        <!-- 4. Event Host - ACM Events Team -->
+        <article class="work-item">
+          <h3>Event Host - ACM Events Team</h3>
+          <p>
+            Led and organized campus-wide computing events, including a 50+ attendee
+            intern panel and a custom Discord Bot workshop; also hosted weekly LeetCode
+            sessions. Collaborated in weekly team meetings to plan and promote ACM events.
+          </p>
+        </article>
 
-      <!-- 5. Coding Instructor - Coding4Youth & JrCoder -->
-      <article class="work-item">
-        <h2>Coding Instructor - Coding4Youth & JrCoder</h2>
-        <p>
-          Taught weekly classes in C++, Java, Lua, and Arduino for groups of up to 8 students.
-          Created customized projects, tests, quizzes, and homework to match different
-          skill levels, and assessed progress with detailed feedback write-ups.
-        </p>
-      </article>
-    </main>
+        <!-- 5. Coding Instructor - Coding4Youth & JrCoder -->
+        <article class="work-item">
+          <h3>Coding Instructor - Coding4Youth & JrCoder</h3>
+          <p>
+            Taught weekly classes in C++, Java, Lua, and Arduino for groups of up to 8 students.
+            Created customized projects, tests, quizzes, and homework to match different
+            skill levels, and assessed progress with detailed feedback write-ups.
+          </p>
+        </article>
+      </main>
 
-    <footer>
-      <p><small>© <time datetime="2025">2025</time> Tanner Berman</small></p>
-    </footer>
+      <footer>
+        <p><small>© <time datetime="2025">2025</time> Tanner Berman</small></p>
+      </footer>
+    </div>
   </body>
 </html>

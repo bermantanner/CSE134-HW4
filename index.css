@@ -1,0 +1,121 @@
+:root {
+  /* colors */
+  --bg: #cbcbcb;  
+  --text: #3b3b3b;    
+  --icon: #848495;
+  --link: #0972eb;      /* regular link/icon hover base */
+  --link-hover: #0091ff;
+
+  /* button surfaces */
+  --surface: #3b3b3b;
+  --surface-2: #3b3b3b;
+
+  /* border */
+  --line: #747489;
+
+  /* spacing */
+  --space-1: 0.25rem;   /* 4px  */
+  --space-2: 0.5rem;    /* 8px  */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-8: 3rem;      /* 48px */
+  --space-10: 4rem;     /* 64px */
+
+  /* font sizes */
+  --fs-body: 1.5rem;    /* 24px body */
+  --fs-h1: 4rem;        /* 64px */
+  --fs-h2: 2.5rem;      /* 40px */
+  --fs-h3: 1.75rem;     /* 28px */
+  --fs-small: 0.875rem; /* 14px */
+
+  /* layout width stuff */
+  --page-max: 70rem;    /* 1280px */
+  --side-gutter: 30rem; /* big side padding on desktop */
+}
+
+html, body {
+  background: #3b3b52;   /* fallback */
+  background: var(--bg);
+  color: #ffffff;        /* fallback */
+  color: var(--text);
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+               Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: var(--fs-body);
+}
+
+/* page frame, large side space that adapts down on smaller screens */
+.page {
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 6vw, var(--side-gutter));
+  padding-block: var(--space-6);
+}
+
+/* typography */
+p { font-size: var(--fs-body); margin-block: 0 1em; }
+small, .meta { font-size: var(--fs-small); color: var(--icon); }
+
+h1, h2, h3 {
+  margin: 0;
+  margin-block: 0.5em 0.6em;
+  line-height: 1.2;
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+/* links and icons */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 150ms ease, text-underline-offset 150ms ease;
+}
+a:hover { color: var(--link-hover); text-decoration: underline; text-underline-offset: 0.15em; }
+a:focus-visible { outline: 2px solid var(--link-hover); outline-offset: 3px; }
+.icon { color: var(--icon); }
+.icon:hover { color: var(--link-hover); }
+
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  :root {
+    --side-gutter: 2rem;      /* shrink side padding on tablet/phone */
+  }
+  h1 { font-size: clamp(2.5rem, 8vw, 3.25rem); }  /* scale down from 64px on small screens */
+  h2 { font-size: clamp(1.75rem, 5.5vw, 2.125rem); }
+  h3 { font-size: clamp(1.25rem, 4.5vw, 1.5rem); }
+  body { font-size: clamp(1.125rem, 3.5vw, 1.375rem); } /* ~18–22px body on phones */
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-6);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.work-item {
+  border: 1px solid var(--line); 
+  border-radius: 10px;
+  padding: var(--space-4);       
+}
+
+
+

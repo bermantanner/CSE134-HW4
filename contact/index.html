@@ -6,103 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Contact Tanner Berman - software engineer and UCSD student.">
     <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="../index.css">
   </head>
 
   <body>
-    <header>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/experience/">Experience</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page">
+      <header>
+        <nav aria-label="Primary">
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/experience/">Experience</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/experiments.html">Experiments</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <h1>Contact</h1>
-      <p>
-        Thanks for stopping by! Whether you're interested in my work, have a question about a project,
-        or just want to say hello, <em>feel free to reach out below.</em>
-      </p>
+      <main>
+        <h1>Contact</h1>
+        <p>
+          Thanks for stopping by! Whether you're interested in my work, have a question about a project,
+          or just want to say hello, <em>feel free to reach out below.</em>
+        </p>
 
-      <section aria-labelledby="form-heading">
-        <h2 id="form-heading">Send a Message</h2>
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Contact Form</legend>
+        <section aria-labelledby="form-heading">
+          <h2 id="form-heading">Send a Message</h2>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Contact Form</legend>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
 
-            <br>
+              <br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
 
-            <br>
+              <br>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" cols="33" required></textarea>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" cols="33" required></textarea>
 
-            <br>
+              <br>
 
-            <button type="submit">Send</button>
-          </fieldset>
-        </form>
-      </section>
+              <button type="submit">Send</button>
+            </fieldset>
+          </form>
+        </section>
 
-      <section aria-labelledby="other-ways-heading">
-        <h2 id="other-ways-heading">Other Ways to Connect</h2>
-        <ul>
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:berman.tanner@gmail.com">berman.tanner@gmail.com</a>
-          </li>
-          <li>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/bermantanner">github.com/bermantanner</a>
-          </li>
-          <li>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/tanner-berman">linkedin.com/in/tanner-berman</a>
-          </li>
-        </ul>
-      </section>
+        <section aria-labelledby="other-ways-heading">
+          <h2 id="other-ways-heading">Other Ways to Connect</h2>
+          <ul>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:berman.tanner@gmail.com">berman.tanner@gmail.com</a>
+            </li>
+            <li>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/bermantanner">github.com/bermantanner</a>
+            </li>
+            <li>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/tanner-berman">linkedin.com/in/tanner-berman</a>
+            </li>
+          </ul>
+        </section>
 
-      <!-- Will remove later, extras for certain tags -->
-      <section aria-labelledby="extras-heading">
-        <h2 id="extras-heading">Extras</h2>
+        <!-- Will remove later, extras for certain tags -->
+        <section aria-labelledby="extras-heading">
+          <h2 id="extras-heading">Extras</h2>
 
-        <!-- iframe -->
-        <iframe
-          title="iframe note"
-          srcdoc="<p>Enstein said, &quot;Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.&quot;</p>">
-        </iframe>
+          <!-- iframe -->
+          <iframe
+            title="iframe note"
+            srcdoc="<p>Enstein said, &quot;Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.&quot;</p>">
+          </iframe>
 
-        <!-- progress -->
-        <p id="resp-label">Response queue progress:</p>
-        <progress aria-labelledby="resp-label" max="100" value="42">42%</progress>
+          <!-- progress -->
+          <p id="resp-label">Response queue progress:</p>
+          <progress aria-labelledby="resp-label" max="100" value="42">42%</progress>
 
-        <!-- dialog -->
-        <dialog open>
-          <p><strong>Heads up:</strong> I am easier to reach through an email directly! </p>
-        </dialog>
+          <!-- dialog -->
+          <dialog open>
+            <p><strong>Heads up:</strong> I am easier to reach through an email directly! </p>
+          </dialog>
 
-        <!-- inline svg (accessible) -->
-        <p>Thanks for reaching out!</p>
-        <svg width="48" height="48" viewBox="0 0 24 24" role="img" aria-labelledby="svg-title">
-          <title id="svg-title">Envelope icon</title>
-          <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 5 8-5H4zm16 2.5l-8 5-8-5V18h16V8.5z"/>
-        </svg>
-      </section>
+          <!-- inline svg (accessible) -->
+          <p>Thanks for reaching out!</p>
+          <svg width="48" height="48" viewBox="0 0 24 24" role="img" aria-labelledby="svg-title">
+            <title id="svg-title">Envelope icon</title>
+            <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 5 8-5H4zm16 2.5l-8 5-8-5V18h16V8.5z"/>
+          </svg>
+        </section>
 
-    </main>
+      </main>
 
-    <footer>
-      <p><small>© <time datetime="2025">2025</time> Tanner Berman</small></p>
-      <noscript>JavaScript is not required to send this form.</noscript>
-    </footer>
+      <footer>
+        <p><small>© <time datetime="2025">2025</time> Tanner Berman</small></p>
+        <noscript>JavaScript is not required to send this form.</noscript>
+      </footer>
+    </div>
   </body>
 </html>
