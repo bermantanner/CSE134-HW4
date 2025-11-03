@@ -167,6 +167,21 @@ a:focus-visible { outline: 2px solid var(--link-hover); outline-offset: 3px; }
   }
 }
 
+@media (max-width: 480px) {
+  .nav { flex-wrap: wrap; gap: var(--space-3); }
+}
+
+@supports (color: color(display-p3 0.2 0.55 1)) {
+  a:hover {
+    color: color(display-p3 0.2 0.55 1); /* vivid P3 blue */
+  }
+}
+
+.work-item:has(ol) {
+  border-color: color-mix(in srgb, var(--text) 83%, white);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--text) 15%, white) inset;
+}
+
 
 
 
