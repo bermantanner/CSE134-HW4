@@ -13,24 +13,46 @@
       <h1>Contact Me</h1>
       <p>If you want to get ahold of me, fill out the form below!!</p>
 
-      <form class="contact-form" action="https://httpbin.org/post" method="post" novalidate>
+      <form class="contact-form" action="https://httpbin.org/post" method="post">
 
         <input type="hidden" name="possible_bot" value="true">
 
         <div class="form-field">
-          <label for="name"> Name <span class="required-indicator" aria-hidden="true">*</span></label>
-          <input type="text" id="name" name="name" autocomplete="name" required >
+          <label for="name">
+            Name <span class="required-indicator" aria-hidden="true">*</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+            minlength="2"
+            maxlength="64"
+            pattern="[A-Za-zÀ-ÿ'\- ]+"
+            title="Please enter 2-64 characters using only letters, spaces, hyphens, or apostrophes."
+          >
         </div>
 
         <div class="form-field">
-          <label for="email"> Email <span class="required-indicator" aria-hidden="true">*</span></label>
-          <input type="email" id="email" name="email" autocomplete="email" required >
+          <label for="email">
+            Email <span class="required-indicator" aria-hidden="true">*</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            inputmode="email"
+            required
+            maxlength="100"
+          >
         </div>
 
         <div class="form-field">
           <label for="reason">Reason for contacting</label>
           <select id="reason" name="reason">
-            <option value="">-- Please choose an option --</option>
+            <option value="">-- Choose --</option>
             <option value="project">Recruitment</option>
             <option value="collaboration">Collaboration</option>
             <option value="chat">Other</option>
@@ -38,8 +60,16 @@
         </div>
 
         <div class="form-field">
-          <label for="comments"> Comments <span class="required-indicator" aria-hidden="true">*</span></label>
-          <textarea id="comments" name="comments" required></textarea>
+          <label for="comments">
+            Comments <span class="required-indicator" aria-hidden="true">*</span>
+          </label>
+          <textarea
+            id="comments"
+            name="comments"
+            required
+            minlength="5"
+            maxlength="400"
+          ></textarea>
         </div>
 
         <div class="form-actions">
