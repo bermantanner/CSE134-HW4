@@ -26,6 +26,17 @@
       </header>
 
       <main>
+        <div class="theme-toggle-wrap">
+          <button type="button" class="theme-toggle" aria-label="Toggle color theme">
+            <span class="theme-toggle-text">Dark mode</span>
+          </button>
+        </div>
+
+        <noscript>
+          <p class="noscript-msg">
+            Theme toggling requires JavaScript. The default theme is being used.
+          </p>
+        </noscript>
         <h1>Contact</h1>
         <p>
           Thanks for stopping by! Whether you're interested in my work, have a question about a project,
@@ -73,5 +84,6 @@
         <noscript>JavaScript is not required to send this form.</noscript>
       </footer>
     </div>
+    <script src="../theme.js" defer></script>
   </body>
 </html>

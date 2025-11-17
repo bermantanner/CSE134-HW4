@@ -2,31 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Form, No JS</title>
+  <title>Contact Form, With JS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="form.css">
+
 </head>
 <body>
-  <main class="page contact-page">
     <div class="theme-toggle-wrap">
-      <button type="button" class="theme-toggle" aria-label="Toggle color theme">
+        <button type="button" class="theme-toggle" aria-label="Toggle color theme">
         <span class="theme-toggle-text">Dark mode</span>
-      </button>
+        </button>
     </div>
 
     <noscript>
-      <p class="noscript-msg">
+        <p class="noscript-msg">
         Theme toggling requires JavaScript. The default theme is being used.
-      </p>
+        </p>
     </noscript>
+  <main class="page contact-page">
     <section class="contact-form-wrapper">
       <h1>Contact Me</h1>
       <p>If you want to get ahold of me, fill out the form below!!</p>
 
-      <form class="contact-form" action="https://httpbin.org/post" method="post">
+      <form class="contact-form" action="https://httpbin.org/post" method="post" novalidate>
 
         <input type="hidden" name="possible_bot" value="true">
+        <input type="hidden" name="form-errors" id="form-errors">
 
         <div class="form-field">
           <label for="name">
@@ -39,9 +41,9 @@
             autocomplete="name"
             required
             minlength="2"
-            maxlength="64"
+            maxlength="60"
             pattern="[A-Za-zÀ-ÿ'\- ]+"
-            title="Please enter 2-64 characters using only letters, spaces, hyphens, or apostrophes."
+            title="Please enter 2-60 characters using letters, spaces, hyphens, or apostrophes."
           >
         </div>
 
@@ -79,7 +81,7 @@
             name="comments"
             required
             minlength="5"
-            maxlength="400"
+            maxlength="500"
           ></textarea>
         </div>
 
@@ -95,5 +97,8 @@
       </form>
     </section>
   </main>
+
+  <script src="form.js" defer></script>
+  <script src="theme.js" defer></script>
 </body>
 </html>
